@@ -1,0 +1,110 @@
+/*Font OpenType*/
+@font-face {
+	font-family: "Ubuntu";
+	src: url(../bootstrap/fonts/freefonts/Ubuntu.ttf) format('truetype');
+	font-weight: bold;
+}
+@font-face {
+	font-family: "FreeSans Bold";
+	src: url(../../fonts/freefonts/FreeSansBold.ttf) format('truetype');
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Nanum Gothic";
+	src: url(../bootstrap/fonts/freefonts/NanumGothicBold.ttf) format('truetype');
+	font-weight: bold;
+}
+/*Font MS*/
+@font-face {
+	font-family: "Agency FB";
+	src: url(../bootstrap/fonts/msfont/agencyb.ttf) format('truetype');
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Tahoma";
+	src: url(../bootstrap/fonts/msfont/agency.ttf) format('truetype');
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Verdana";
+	src: url(../bootstrap/fonts/fonts/msfont/verdana.ttf) format('truetype');
+}
+@font-face {
+	font-family: "Verdana Bold";
+	src: url(../bootstrap/fonts/fonts/msfont/verdanab.ttf) format('truetype');
+	font-weight: bold;
+}
+
+
+* { margin: 0; padding: 0; }
+
+.fontSelect {
+	position: relative;
+	padding: 3px;
+	height: 34px;
+	line-height: 28px;
+	cursor: pointer;
+	margin: 3px;
+
+	width: 98%;
+
+	background-image: -webkit-linear-gradient(top, #f9f9f9, #f0f0f0);
+	background-image: -moz-linear-gradient(top, #f9f9f9, #f0f0f0);
+	background-image: -o-linear-gradient(top, #f9f9f9, #f0f0f0);
+	background-image: -ms-linear-gradient(top, #f9f9f9, #f0f0f0);
+	background-image: linear-gradient(top, #f9f9f9, #f0f0f0);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='$from', EndColorStr='$to');
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #cecece;
+}
+
+.fontSelect span {
+	overflow: hidden;
+	margin-left: 5px;
+}
+
+.fontSelect .arrow-down {
+	position: absolute;
+	right: 10px;
+	top: 14px;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+
+	border-top: 6px solid #AAA;
+}
+
+.fontSelectUl {
+	list-style: none;
+	width: 220px;
+	background: #f9f9f9;
+	position: absolute;
+	left: 0;
+	top: 35px;
+	z-index:10000;
+}
+
+.fontSelectUl li {
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	cursor: pointer;
+	padding: 0 10px;
+	font-size: 14px;
+	border-left: 1px solid #f0f0f0;
+	border-right: 1px solid #f0f0f0;
+	z-index:10000;
+}
+
+.fontSelectUl li:last-child {
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.fontSelectUl li:hover {
+	background: #DDD;
+}
